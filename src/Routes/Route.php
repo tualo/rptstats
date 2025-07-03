@@ -21,6 +21,6 @@ class Route implements IRoute
                 // $db->direct('delete from  cmp_mail_calls where id <date_add(now(),interval -7 day) ;');
             } catch (\Exception $e) {
             }
-        }, array('get'), false);
+        }, array('get'), true);
     }
 }
